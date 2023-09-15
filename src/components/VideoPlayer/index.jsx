@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import styles from './styles.module.css';
+import clsx from 'clsx';
 const SRC = '/src/assets/production_id_4434242.mp4';
 
 export default function VideoPlayer() {
@@ -18,10 +19,15 @@ export default function VideoPlayer() {
     useEffect(() => {
 
     }, [])
+
+    const playerClassName = clsx(styles.player, {
+        [styles.hidden]: playing
+    })
+
     return (
-        <div>
-            <video className={styles.video} src={SRC} ref={video} controls={false} />
-            <button className={styles.player} onClick={handlePlay} />
+        <div onClick={handlePlay}>
+            <video loop className={styles.video} src={SRC} ref={video} controls={false} />
+            <i className={playerClassName} />
         </div>
     )
 }
