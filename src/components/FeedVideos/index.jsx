@@ -1,3 +1,4 @@
+import styles from './styles.module.css'
 import VideoPlayer from "../VideoPlayer";
 
 const VIDEOS = [
@@ -27,8 +28,13 @@ const VIDEOS = [
 
 export default function FeedVideos() {
     return (
-        VIDEOS.map(video => (
-            <VideoPlayer key={video.id} {...video} />
-        ))
+        <section className={styles.feed}>
+            {VIDEOS.map(video => (
+                <div key={video.id} className={styles.item}>
+                    <VideoPlayer  {...video} />
+                </div>
+            ))}
+        </section>
+
     )
 }
