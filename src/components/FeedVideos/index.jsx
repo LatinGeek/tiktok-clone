@@ -11,7 +11,7 @@ const VIDEOS = [
         comments: 333,
         songTitle: 'sonido original - Pedro',
         albumCover: '',
-        src: '/src/assets/production_id_4434242.mp4'
+        src: '/assets/production_id_4434242.mp4'
     },
     {
         id: 2,
@@ -22,7 +22,7 @@ const VIDEOS = [
         comments: 333,
         songTitle: 'sonido original - Pedro',
         albumCover: '',
-        src: '/src/assets/pexels-cottonbro-6853337.mp4'
+        src: '/assets/pexels-cottonbro-6853337.mp4'
     }
 ]
 

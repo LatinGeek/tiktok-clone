@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import styles from './styles.module.css';
 import clsx from 'clsx';
+import VideoPlayerActions from './VideoPlayerActions';
 
 export default function VideoPlayer({ src }) {
 
@@ -27,6 +28,7 @@ export default function VideoPlayer({ src }) {
         <div className={styles.wrapper} onClick={handlePlay}>
             <video loop className={styles.video} src={src} ref={video} controls={false} />
             <i className={playerClassName} />
+            <VideoPlayerActions />
         </div>
     )
 }
