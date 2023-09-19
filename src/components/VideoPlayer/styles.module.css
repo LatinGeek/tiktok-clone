@@ -28,14 +28,14 @@
 
 .actions {
     position: absolute;
-    height: 35vh;
+    height: 45vh;
     align-content: space-evenly;
     display: grid;
-    bottom: 19vh;
+    bottom: 15vh;
     right: 16px;
 }
 
 .action {
-    filter: invert();
-
+    height: 40px;
 }
+
