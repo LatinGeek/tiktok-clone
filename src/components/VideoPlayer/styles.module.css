@@ -28,11 +28,14 @@
 
 .actions {
     position: absolute;
-    bottom: 16px;
+    height: 35vh;
+    align-content: space-evenly;
+    display: grid;
+    bottom: 19vh;
     right: 16px;
 }
 
 .action {
     filter: invert();
-    
+
 }
